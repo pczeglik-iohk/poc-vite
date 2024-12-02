@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "poc-app": "file:.yalc/poc-app",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "staking-app": "file:.yalc/staking-app"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

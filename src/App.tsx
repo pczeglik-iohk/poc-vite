@@ -1,15 +1,20 @@
-import React from 'react';
-import { render as renderStakingApp } from 'poc-app';
+import React, { ReactNode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { renderApp } from 'staking-app';
+
+const r = (el: ReactNode, container: Element) => {
+  createRoot(container).render(el)
+}
 
 export const App = () => {
   React.useEffect(() => {
-    renderStakingApp('poc-app-container');
+    renderApp({ containerId: '#staking-app-container', render: r });
   }, []);
 
   return (
     <div>
       <h1>Lace Platform App</h1>
-      <div id="poc-app-container"></div>
+      <div id="staking-app-container"></div>
     </div>
   );
 }
