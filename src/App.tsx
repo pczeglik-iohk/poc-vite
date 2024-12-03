@@ -1,15 +1,15 @@
 import React from 'react';
-import { render as renderStakingApp } from 'poc-app';
+import { render as renderStakingApp } from 'staking-app';
 
 export const App = () => {
   React.useEffect(() => {
-    renderStakingApp('poc-app-container');
+    renderStakingApp('staking-app-container');
   }, []);
 
   return (
     <div>
       <h1>Lace Platform App</h1>
-      <div id="poc-app-container"></div>
+      <div id="staking-app-container"></div>
     </div>
   );
 }
